@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  font-size: 16px;
+  font-family: $font-family-base;
+}
+
+// .container {
+//   // width: 1140px;
+//   // margin: 0 auto;
+// }
+
+@media screen and (max-width: 576px) {
+  // .container {
+  //   width: 90%;
+  //   margin: 0 auto;
+  // }
+}
+
+@media screen and (min-width: 577px) {
+  // .container {
+  //   width: 90%;
+  //   margin: 0 auto;
+  // }
+}
+
+@media screen and (min-width: 768px) {
+  // .container {
+  //   width: 90%;
+  //   margin: 0 auto;
+  // }
+}
+
+@media screen and (min-width: 992px) {
+  // .container {
+  //   width: 992px;
+  //   margin: 0 auto;
+  // }
+}
+
+@media screen and (min-width: 1200px) {
+  // .container {
+  //   width: 1140px;
+  //   margin: 0 auto;
+  // }
+}
