@@ -35,21 +35,23 @@
         margin: 2em;
       }
       .block--left {
-        text-align: left;
         .block--left_title {
           text-transform: capitalize;
           font-weight: $bold;
-          color: $main-color;
+          color: #0aaf87;
           font-size: 2rem;
           margin-bottom: 16px;
           letter-spacing: -1px;
           margin: 0 0 8px 0;
+        }
+        .block--left_title,
+        .address,
+        .information {
           text-align: right;
         }
         .address,
         .information {
           margin: 0 0 16px 0;
-          text-align: right;
           line-height: 160%;
         }
         .map {
@@ -73,13 +75,8 @@
           flex-direction: column;
           align-items: flex-end;
           width: 100%;
-          input,
-          textarea {
-            text-align: right;
-            font-family: $font-family-base;
-          }
           .btn {
-            background: $main-color;
+            background: #0aaf87;
             transition: all 0.3s;
             margin-top: 8px;
             &.btn--small {
@@ -87,10 +84,10 @@
               color: #ffffff;
             }
             &:hover {
-              background: #ff6d6a;
+              background: $main-color;
             }
             &:focus {
-              background: #ff6d6a;
+              background: $main-color;
             }
           }
         }
@@ -113,6 +110,7 @@
           width: 100%;
         }
         .block--left {
+          text-align: center;
           .map {
             width: 100%;
           }
@@ -136,6 +134,7 @@
           width: 100%;
         }
         .block--left {
+          text-align: center;
           .map {
             width: 100%;
           }
@@ -159,6 +158,7 @@
           width: 100%;
         }
         .block--left {
+          text-align: left;
           .map {
             width: 100%;
           }
