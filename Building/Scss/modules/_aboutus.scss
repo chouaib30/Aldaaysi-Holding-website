@@ -1,0 +1,174 @@
+.aboutus__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 2em;
+  width: 100%;
+  overflow: hidden;
+  background: url("../Assets/aboutus_bg.png") no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  .inner__section {
+    max-width: 1140px;
+    width: 100%;
+    .title {
+      text-transform: capitalize;
+      font-weight: $bold;
+      color: #ffffff;
+      font-size: 3rem;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+      margin: 0 0 32px 0;
+      text-align: center;
+    }
+    .blocks {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        .block__icon {
+          overflow: hidden;
+          margin: 0 0 16px 0;
+          .icon__container {
+            overflow: hidden;
+            width: 160px;
+            height: 160px;
+            padding: 12px;
+            svg {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+              object-position: center;
+              transition: 0.3s;
+            }
+          }
+        }
+        .block__title {
+          color: #ffffff;
+          font-size: 2.5rem;
+          margin: 0 0 12px 0;
+          letter-spacing: -1px;
+          text-align: center;
+        }
+        .block__content {
+          color: #ffffff;
+          text-align: left;
+          width: 100%;
+          padding: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .aboutus__section {
+    background: url("../Assets/aboutus_bg_mobile.png") no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    .inner__section {
+      width: 90%;
+      .title {
+        font-size: 2rem;
+      }
+      .blocks {
+        flex-direction: column;
+        .block {
+          width: 100%;
+          flex-direction: column;
+          .block__content {
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .aboutus__section {
+    .inner__section {
+      width: 90%;
+      .title {
+        font-size: 2rem;
+      }
+      .blocks {
+        flex-direction: column;
+        .block {
+          width: 100%;
+          flex-direction: column;
+          .block__content {
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutus__section {
+    background: url("../Assets/aboutus_bg.png") no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    .inner__section {
+      width: 90%;
+      .title {
+        font-size: 3rem;
+      }
+      .blocks {
+        flex-direction: column;
+        .block {
+          width: 100%;
+          flex-direction: row;
+          .block__content {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .aboutus__section {
+    .inner__section {
+      width: 90%;
+      .blocks {
+        flex-direction: column;
+        .block {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutus__section {
+    .inner__section {
+      width: 90%;
+      .blocks {
+        flex-direction: column;
+        .block {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

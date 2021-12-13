@@ -92,6 +92,11 @@
       .title {
         font-size: 2rem;
       }
+      .ourpartners__carousel {
+        .carousel__item {
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -102,6 +107,11 @@
       width: 90%;
       .title {
         font-size: 2rem;
+      }
+      .ourpartners__carousel {
+        .carousel__item {
+          width: 100%;
+        }
       }
     }
   }
@@ -114,6 +124,11 @@
       .title {
         font-size: 3rem;
       }
+      .ourpartners__carousel {
+        .carousel__item {
+          width: 50%;
+        }
+      }
     }
   }
 }
@@ -122,6 +137,11 @@
   .ourpartners__section {
     .inner__section {
       width: 90%;
+      .ourpartners__carousel {
+        .carousel__item {
+          width: 33.33%;
+        }
+      }
     }
   }
 }
@@ -130,6 +150,11 @@
   .ourpartners__section {
     .inner__section {
       width: 90%;
+      .ourpartners__carousel {
+        .carousel__item {
+          width: 25%;
+        }
+      }
     }
   }
 }
