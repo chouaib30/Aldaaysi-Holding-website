@@ -57,9 +57,28 @@
           }
         }
         .block__title {
-          font-weight: $regular;
-          margin-top: 8px;
-          color: $main-color;
+          margin-top: 16px;
+          a {
+            font-weight: $regular;
+            text-decoration: none;
+            color: $main-color;
+            transition: color 0.3s;
+            &:hover {
+              font-weight: $medium;
+              &.color--01 {
+                color: #ff6d6a;
+              }
+              &.color--02 {
+                color: #64ccc9;
+              }
+              &.color--03 {
+                color: #0aaf87;
+              }
+              &.color--04 {
+                color: #ffc143;
+              }
+            }
+          }
         }
       }
     }
@@ -106,6 +125,19 @@
                 object-fit: cover;
                 object-position: center;
                 border-radius: 32px;
+              }
+            }
+            .flickity-button {
+              svg {
+                path {
+                  fill: $main-color;
+                  transition: 0.3s;
+                }
+                &:hover {
+                  path {
+                    fill: #ff6d6a;
+                  }
+                }
               }
             }
           }

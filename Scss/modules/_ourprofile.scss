@@ -45,6 +45,19 @@
               }
             }
           }
+          .flickity-button {
+            svg {
+              path {
+                fill: $main-color;
+                transition: 0.3s;
+              }
+              &:hover {
+                path {
+                  fill: #ff6d6a;
+                }
+              }
+            }
+          }
         }
       }
       .block--right {

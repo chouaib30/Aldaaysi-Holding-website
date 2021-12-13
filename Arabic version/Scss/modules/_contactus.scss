@@ -38,7 +38,7 @@
         .block--left_title {
           text-transform: capitalize;
           font-weight: $bold;
-          color: #0aaf87;
+          color: $main-color;
           font-size: 2rem;
           margin-bottom: 16px;
           letter-spacing: -1px;
@@ -76,7 +76,7 @@
           align-items: flex-end;
           width: 100%;
           .btn {
-            background: #0aaf87;
+            background: $main-color;
             transition: all 0.3s;
             margin-top: 8px;
             &.btn--small {
@@ -84,10 +84,10 @@
               color: #ffffff;
             }
             &:hover {
-              background: $main-color;
+              background: #ff6d6a;
             }
             &:focus {
-              background: $main-color;
+              background: #ff6d6a;
             }
           }
         }

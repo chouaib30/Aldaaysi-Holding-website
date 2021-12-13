@@ -76,8 +76,10 @@
           path {
             fill: $main-color;
             transition: 0.3s;
-            &:hover {
-              fill: #0aaf87;
+          }
+          &:hover {
+            path {
+              fill: #ff6d6a;
             }
           }
         }
