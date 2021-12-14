@@ -12,7 +12,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,6 +25,13 @@
     border-radius: 50px;
     padding: 0;
     color: #ffffff;
+    border: 2px solid #ffffff;
     transition: background 0.3s;
+    &:hover {
+      background: $main-color;
+    }
+    &:focus {
+      background: $main-color;
+    }
   }
 }
