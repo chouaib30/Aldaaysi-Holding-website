@@ -76,10 +76,8 @@
           path {
             fill: $main-color;
             transition: 0.3s;
-          }
-          &:hover {
-            path {
-              fill: #ff6d6a;
+            &:hover {
+              fill: #0aaf87;
             }
           }
         }
@@ -96,11 +94,9 @@
         font-size: 2rem;
       }
       .excutivemanagement__carousel {
-        // flex-direction: column;
-        // .block {
-        //   width: 90%;
-        //   margin: 1em auto;
-        // }
+        .carousel__item {
+          width: 100%;
+        }
       }
     }
   }
@@ -112,13 +108,6 @@
       width: 90%;
       .title {
         font-size: 2rem;
-      }
-      .excutivemanagement__carousel {
-        // flex-direction: column;
-        // .block {
-        //   width: 90%;
-        //   margin: 1em auto;
-        // }
       }
     }
   }
@@ -132,11 +121,9 @@
         font-size: 3rem;
       }
       .excutivemanagement__carousel {
-        // flex-direction: row;
-        // .block {
-        //   width: 20%;
-        //   margin: 1em 1.5em;
-        // }
+        .carousel__item {
+          width: 50%;
+        }
       }
     }
   }
@@ -147,11 +134,9 @@
     .inner__section {
       width: 90%;
       .excutivemanagement__carousel {
-        // flex-direction: row;
-        // .block {
-        //   margin: 1em;
-        //   width: 20%;
-        // }
+        .carousel__item {
+          width: 33.33%;
+        }
       }
     }
   }
@@ -162,11 +147,9 @@
     .inner__section {
       width: 90%;
       .excutivemanagement__carousel {
-        // flex-direction: row;
-        // .block {
-        //   margin: 1em;
-        //   width: 20%;
-        // }
+        .carousel__item {
+          width: 25%;
+        }
       }
     }
   }

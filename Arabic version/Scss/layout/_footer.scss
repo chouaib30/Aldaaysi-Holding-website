@@ -10,15 +10,22 @@
   position: relative;
   width: 100%;
   .bg {
-    display: block;
     width: 100%;
-    height: 100%;
+    max-height: 400px;
     object-fit: cover;
     object-position: center;
     position: absolute;
     bottom: -30%;
     left: 0;
     z-index: 1;
+    &.desktop {
+      display: block;
+    }
+    &.mobile {
+      display: none;
+      bottom: 0;
+      height: 200px;
+    }
   }
 
   .inner__section {
@@ -54,9 +61,6 @@
               height: 24px;
               padding: 4px;
               margin: 0 0 0 4px;
-              &:first-child {
-                margin: 0 0 0 0;
-              }
               img {
                 width: 100%;
                 height: 100%;
@@ -90,6 +94,14 @@
 
 @media screen and (max-width: 576px) {
   .footer {
+    .bg {
+      &.mobile {
+        display: block;
+      }
+      &.desktop {
+        display: none;
+      }
+    }
     .inner__section {
       width: 90%;
       .inner__section--top {
@@ -107,6 +119,14 @@
 
 @media screen and (min-width: 577px) {
   .footer {
+    .bg {
+      &.mobile {
+        display: block;
+      }
+      &.desktop {
+        display: none;
+      }
+    }
     .inner__section {
       width: 90%;
       .inner__section--top {
@@ -124,13 +144,21 @@
 
 @media screen and (min-width: 768px) {
   .footer {
+    .bg {
+      &.mobile {
+        display: none;
+      }
+      &.desktop {
+        display: block;
+      }
+    }
     .inner__section {
       width: 90%;
       .inner__section--top {
         .blocks {
-          flex-direction: column;
+          flex-direction: row;
           .block {
-            width: 90%;
+            width: 40%;
             margin: 1em;
           }
         }
@@ -147,8 +175,8 @@
         .blocks {
           flex-direction: row;
           .block {
-            width: 20%;
-            margin: 0;
+            width: 33.33%;
+            margin: 1em;
           }
         }
       }
